@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleConApp
 {
-    abstract class Account2
+    abstract class Account1
     {
         public int AccNo { get; set; }
         public string Name { get; set; }
@@ -28,7 +28,7 @@ namespace SampleConApp
         public abstract void CalculateInterest();
     }
 
-    class SDAccount2 : Account2
+    class SDAccount : Account
     {
         public override void CalculateInterest()
         {
@@ -40,7 +40,7 @@ namespace SampleConApp
         }
     }
 
-    class RDAccount2 : Account2
+    class RDAccount : Account
     {
         public override void CalculateInterest()
         {
@@ -52,7 +52,7 @@ namespace SampleConApp
         }
     }
 
-    class FDAccount2 : Account2
+    class FDAccount : Account
     {
         public override void CalculateInterest()
         {
@@ -91,7 +91,7 @@ namespace SampleConApp
             //return Utilities.Prompt("ENTER THE TYPEOF ACCOUNT YOU WANT TO CREATE");
 
         }
-        /*
+        
         static bool Menu(Options option)
         {
             switch (option)
@@ -111,12 +111,12 @@ namespace SampleConApp
         }
 
    
-          */ 
+          
     }
             
   
      
-    class Ex12_AbstractClass
+    class Assignmant_13
     {
         static void Main(string[] args)
         {
